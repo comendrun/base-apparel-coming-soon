@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png" />
+    <!--Favicon-->
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--Google Fonts-->
+
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .attribution {
+        text-align: center;
+        color: var(black);
+        font-size: 0.7rem;
+      }
+
+      .attribution a {
+        color: hsl(14, 88%, 65%);
+        text-decoration: none;
+        font-weight: 700;
+      }
+    </style>
+    <title>Frontend Mentor | Base Apparel Coming Soon Page</title>
+  </head>
+  <body>
+    <main>
+      <img src="./images/logo.svg" alt="logo of the page" class="top-logo" />
+      <div class="container">
+        <div class="image-container">
+          <img
+            src="./images/hero-mobile.jpg"
+            alt="'hero-picture"
+            class="mobile-hero"
+          />
+          <img
+            src="./images/hero-desktop.jpg"
+            alt="'hero-picture"
+            class="desktop-hero"
+          />
+          <!--end of .image-container div-->
+        </div>
+
+        <div class="text-box">
+          <h1>We're <span>coming soon</span></h1>
+
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+
+          <form method="POST" id="form" class="input-container">
+            <input
+              class="email-input"
+              type="text"
+              placeholder="Email Address"
+              id="emailInput"
+            />
+
+            <img
+              alt="error"
+              src="./images/icon-error.svg"
+              class="error hidden"
+              id="error-img"
+            />
+
+            <button class="sub-btn" type="submit">
+              <img src="./images/icon-arrow.svg" alt="arrow-icon" />
+            </button>
+          </form>
+          <div class="alert-container">
+            <p id="alert-fail" class="alert hidden">
+              Please provide a valid email
+            </p>
+            <p id="alert-success" class="success hidden">Thank You!</p>
+          </div>
+          <!--End of .text-box div-->
+        </div>
+        <!-- <- End of container div-->
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by &nbsp;
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by &nbsp;
+      <a href="https://github.com/comendrun"> Kamran Rouhani</a>.
+    </footer>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
